@@ -12,13 +12,14 @@ public class GraphTest {
 
         GraphIO.printGraph(g);                     // Graph ausgeben
 
-        Breitensuche.breitensuche(g, "Hamburg",  "Muenchen");
-
+        System.out.println("Breitensuche iterativ");
+        BreitensucheIterativ.breitensuche(g, "Hamburg",  "Muenchen");
+        System.out.println("---------------------");
+        System.out.println("Breitensuche rerkursiv");
+        g.breitenSucheRekursiv("Hamburg", "Muenchen");
     }
 
-    public static void breitenSuche (String startKnoten, String gesuchterKnoten){
-        Breitensuche.breitensuche(g,startKnoten,gesuchterKnoten);
-    }
+
 
 
 }

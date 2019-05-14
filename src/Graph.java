@@ -49,4 +49,12 @@ public class Graph {
         v.edges.add(new Edge(w, cost));   // fuege Kante (v,w) mit Kosten cost ein
     }
 
+
+    public void breitenSucheRekursiv(String startKnotenName, String zielKnotenName){
+        Vertex startKnoten = graph.get(startKnotenName);
+        startKnoten.breitenSuche(zielKnotenName);
+
+
+    }
+
 }

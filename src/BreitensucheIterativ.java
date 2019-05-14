@@ -4,7 +4,7 @@ import java.util.Queue;
 /**
  * Created by nicolaiemig on 24.03.17.
  */
-public class Breitensuche {
+public class BreitensucheIterativ {
     public static void breitensuche (Graph g, String start, String gesuchterKnoten){
         Queue<Vertex> s = new LinkedList<Vertex>();
         Vertex aktuellerKnoten;
